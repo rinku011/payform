@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <style>
+        *{
+  box-sizing: border-box;
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 15px 20px;
+  padding: 10px;
+  font-size: medium;
+}
+.container{
+  background-color: rgb(180, 176, 176);
+  padding: 10px 20px 10px 20px;
+  border: 1px darkgray;
+  border-radius: 3px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+button,select,textarea{
+  width: 100%;
+  padding: 7px;
+  border:1px solid gray;
+  border-radius: 5px;
+}
+fieldset{
+  background-color: white;
+  border-radius: 5px;
+}
+h1{
+  text-align: center;
+}
+button:hover{
+  color: white;
+  background-color: green;
+}
+
+
+    </style>
+    <div class="container">
+    <h1>Payment Form</h1>
+    <hr>
+     
+    <form action="" method="get">
+        <h2>Student Data</h2>
+        <p> Name :  <input type="text" name="name" placeholder="username" required></p>
+        <p> Password : <input type="password" name="password" placeholder="password" required></p>
+        <p> Email : <input type="email" name="email" placeholder="abc123@gmail.com" required></p>
+        <p>  Date : <input type="date" name="date" id="date" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male"> Male
+            <input type="radio" name="gender" id="female"> Female
+            <input type="radio" name="gender" id="other"> Other
+         </fieldset>
+        
+         <p>College Name : <input type="text" name="college name" placeholder=" Enter college Name" required></p>
+         <p> Course : <select name="course" id="year" required>
+             <option name=""> --Select Your Course--</option>
+             <option value="B.Tech">B.Tech</option>
+             <option value="M.Tech">M.Tech</option>
+             <option value="MCA">MCA</option> 
+            </select></p>
+
+        <p> Branch : <select name="Branch" id="Branch" required>
+            <option name="">--Select Your Branch--</option>
+            <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electical Engineering">Electical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Bio Technology">Bio Technology</option>
+            <option value="Applied Chemistry">Applied Chemistry</option>
+            <option value="MCA">MCA</option>
+        </select></p>
+
+        <p> Address : <textarea name="address" id="address" rows="6" required></textarea> </p>
+        <p> Pincode : <input type="number" name="pincode" id="number" required></p>
+       <br>
+        <h2>Payment Information</h2>
+        <p>Card Type : <select name="card_type" id="card_type" required>
+              <option name="">--Select Your Card--</option>
+              <option value="visa">Visa</option>
+              <option value="rupay">Rupay</option>
+              <option value="icici">ICICI</option>
+              <option value="master_card">Master_card</option>
+              <option value="HDFC">HDFC</option>
+        </select></p>
+
+        <p>Card Number : <input type="password" name="card_number" placeholder="1111-2222- 3333" required></p>
+        <p>CVV : <input type="password" name="cvv" placeholder="123." required></p>
+        <p><button type="submit" required>Pay Now</button></p>
+        </form>
+    </div>
+</body>
+</html>
